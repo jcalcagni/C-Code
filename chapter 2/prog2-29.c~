@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+main()
+{
+	printf ("%d", 'A'"\n");
+	printf ("%d", 'B');
+	printf ("%d", 'C');
+	printf ("%d", 'a');
+	printf ("%d", 'b');
+	printf ("%d", 'c');
+	printf ("%d", '0');
+	printf ("%d", '1');
+	printf ("%d", '2');
+	printf ("%d", '$');
+	printf ("%d", '*');
+	printf ("%d", '+');
+	printf ("%d", '/');
+	printf ("%d", ' ');
+	
+	
+
+}
+

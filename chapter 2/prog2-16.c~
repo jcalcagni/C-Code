@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+main()
+{
+	int num1, num2;
+	
+	printf ("Enter 2 integers: "\n);
+	scanf ("%d %d", &num1, &num2)   ;
+
+	printf ("The sum is: ", num1 + num2 \n);
+	printf ("The difference is: ", num1 - num2 \n);
+	printf ("The product is: ", num1 * num2 \n);
+	printf ("The quotient is :", num1 / num2 \n);
+	printf ("The modulus is: ", num1 % num2 \n);
+}
+

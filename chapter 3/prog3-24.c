@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+main()
+{
+
+	int counter = 1, number = 0, largest = 0;	
+	
+	while (counter <= 10){
+  	 printf ("Enter # of units sold: ");
+	 scanf ("%d", &number);
+         counter++; 
+                 
+         if (number > largest) {
+	  largest = number;
+         }
+        }
+
+        printf ("Largest number of units sold is: %d\n", largest);
+	 
+
+	return 0;
+}
+

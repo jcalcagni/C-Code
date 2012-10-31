@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+main()
+{
+
+	int counter = 1;
+	
+	while (counter <= 3000000) {
+           
+	  if (counter % 1000000 == 0) {
+	    printf ("Up to %d\n", counter); 
+ 	    counter++;
+	  }
+           else
+	    counter++;
+
+        }
+	      
+	return 0;
+}
+

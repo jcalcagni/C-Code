@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+void towersOfHanoi(int, int, int, int); /* function prototype */
+
+main()
+{
+	
+	int disks, startPeg, DestPeg, SparePeg;
+
+
+	/* prompt & scan for user input */
+	/* for number of disks, start peg, ending peg and spare peg */
+
+
+	/* in this example, 3 disks, start at peg 1, move to peg3, use peg2 as a spare */
+
+	towersOfHanoi(3, 1, 3, 2); /* number to move, start peg, end peg, spare peg */
+
+	return 0;
+}
+
+/* function towersOfHanoi defintion */
+void towersOfHanoi(int disks, int startPeg, int destPeg, int sparePeg)
+{
+	if (disks == 1) {
+
+	   printf ("Move from  %d ----> %d\n", startPeg, destPeg);
+	}
+	else
+	{
+        towersOfHanoi(disks - 1, startPeg, sparePeg, destPeg);
+	towersOfHanoi(1, startPeg, destPeg, sparePeg);
+	towersOfHanoi(disks - 1, sparePeg, destPeg, startPeg);
+	}
+
+	return;
+
+}
+

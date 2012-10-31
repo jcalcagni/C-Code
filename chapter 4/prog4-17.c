@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+main()
+{
+
+	int accountNo = 0, i = 1;	
+	double begBalance = 0, totCharges = 0, totCredits = 0, creditLimit = 0, newBalance = 0;
+	
+          for (i = 1; i <= 3; i++) {
+          
+ 	    printf ("Enter account number: ");
+	    scanf ("%d", &accountNo);
+	
+	    printf ("Enter current credit limit: ");
+  	    scanf ("%lf", &creditLimit);
+
+	    printf ("Enter current balance: ");
+  	    scanf ("%lf", &begBalance);	
+
+	   creditLimit = creditLimit * 0.5;
+
+	   if (begBalance > creditLimit) {
+		printf ("Account:      %d\n", accountNo);
+		printf ("New Credit Limit: %.2f\n", creditLimit);
+		printf ("Balance:      %.2f\n", begBalance);
+		printf ("Credit Limit Exceeded.\n");
+	        printf ("\n");
+	    }              
+           else
+	       printf ("\n");
+
+	  } 
+
+
+	return 0;
+}
+

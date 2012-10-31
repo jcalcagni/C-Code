@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+drawSquare(int, char); /* function prototype */
+
+main()
+{
+	
+	int side;
+	char fill;
+
+
+	/* prompt & scan for user input */
+	/* for base and exponent */
+
+	printf ("Enter an integer: ");
+	scanf ("%d", &side);
+	
+	getchar();
+
+	printf ("Enter a fill character: ");
+	scanf ("%c", &fill);
+
+
+	drawSquare(side, fill);
+
+	return 0;
+}
+
+/* function drawSquare defintion */
+drawSquare(int side, char fill)
+{
+	int i, j;
+	
+
+	for (j = 1; j <= side; j++) {
+ 	   for (i = 1; i <= side; i++) {
+	     printf ("%c", fill);
+	    }
+	    printf ("\n");
+	}
+
+	/* need logic if integer is negative */
+
+}
+
